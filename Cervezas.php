@@ -38,7 +38,7 @@ class Cervezas
     public static function getById($id)
     {
         // Consulta de la tabla Cervezas
-        $consulta = "SELECT id, name, description, country, type, family, alc
+        $consulta = "SELECT id, name, description, country, type, family, alc, image
 					FROM Cervezas
                     WHERE id = ?";
         try {
