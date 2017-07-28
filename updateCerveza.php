@@ -16,10 +16,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$body['family'],
         $body['alc']);
     if ($retorno) {
-        $json_string = json_encode(array("estado" => 1,"mensaje" => "Actualizacion correcta"));
+        $json_string = json_encode(array("status" => 1,"mensaje" => "Actualizacion correcta"));
 		echo $json_string;
     } else {
-        $json_string = json_encode(array("estado" => 2,"mensaje" => "No se actualizo el registro"));
+        $json_string = json_encode(array("status" => 2,"mensaje" => "No se actualizo el registro"));
 		echo $json_string;
     }
 }
