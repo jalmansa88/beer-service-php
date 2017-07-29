@@ -17,7 +17,7 @@ class Cervezas
      */
     public static function getAll()
     {
-        $consulta = "SELECT * FROM Cervezas";
+        $consulta = "SELECT * FROM Cervezas ORDER BY id ASC";
         try {
             // Preparar sentencia
             $comando = Database::getInstance()->getDb()->prepare($consulta);
